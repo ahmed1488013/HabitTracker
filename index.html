@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HabitTracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>HabitTracker</h1>
+        <p>Track your daily habits and stay motivated!</p>
+    </header>
+
+    <div class="habit-container">
+        <div class="habit-card" id="habit1">
+            <h3>Morning Workout</h3>
+            <p>Start your day with a 30-minute workout session.</p>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress1"></div>
+            </div>
+            <button class="btn" onclick="markComplete(1)">Mark as Complete</button>
+        </div>
+
+        <div class="habit-card" id="habit2">
+            <h3>Read 20 Pages</h3>
+            <p>Read at least 20 pages from your favorite book.</p>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress2"></div>
+            </div>
+            <button class="btn" onclick="markComplete(2)">Mark as Complete</button>
+        </div>
+
+        <div class="habit-card" id="habit3">
+            <h3>Drink 2 Liters of Water</h3>
+            <p>Stay hydrated by drinking 2 liters of water daily.</p>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress3"></div>
+            </div>
+            <button class="btn" onclick="markComplete(3)">Mark as Complete</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2024 HabitTracker. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
